@@ -23,7 +23,7 @@ const chrome = require('selenium-webdriver/chrome');
     await driver.get("http://localhost:8081/loginpage.html");
 
     await driver.findElement(By.id("username")).sendKeys("admin");
-    await driver.findElement(By.id("password")).sendKeys("password@123");
+    await driver.findElement(By.id("password")).sendKeys("password@");
     await driver.findElement(By.xpath("//button[contains(., 'Login')]")).click();
     await driver.sleep(1000);
 
